@@ -10,9 +10,9 @@ COPY . /app
 # Install project dependencies from requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Set environment variables (Modify these according to your project's requirements)
+# Set environment variables
 ENV githubToken=<TOKEN>
 ENV tgToken=<TOKEN>
 
-# Specify the command to run your Python application
+# Specify the command to run Python application
 CMD ["python", "src/run.py"]
